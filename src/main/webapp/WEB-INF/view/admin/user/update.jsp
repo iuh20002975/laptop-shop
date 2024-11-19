@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Email:</label>
-                                    <form:input type="email" class="form-control" path="email" />
+                                    <form:input type="email" class="form-control" path="email" disabled="true" />
                                 </div>
 
                                 <div class="mb-3">

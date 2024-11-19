@@ -12,6 +12,8 @@ import iuh.fit.se.domain.User;
 public interface UserRepository extends JpaRepository<User, Long> {
     User save(User user1);
 
+    void deleteById(long id);
+
     List<User> findByEmail(String email);
 
     List<User> findAll();
