@@ -13,6 +13,7 @@ import iuh.fit.se.service.UserService;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -40,6 +41,14 @@ public class UserController {
         List<User> users = this.userService.getAllUsers();
         model.addAttribute("user1", users);
         return "admin/user/table-user";
+    }
+
+    @RequestMapping("/admin/user/{id}")
+    public String getUserDetailPage(Model model, @PathVariable long id) {
+        User user = this.userService.getUserById(id);
+        model.addAttribute("user", user);
+        model.addAttribute("id", id);
+        return "admin/user/show";
     }
 
     @RequestMapping("/admin/user/create")
