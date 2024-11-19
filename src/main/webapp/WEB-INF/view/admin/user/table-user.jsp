@@ -44,7 +44,8 @@
                                             <th>${user.fullName}</th>
                                             <td>
                                                 <a href="/admin/user/${user.id}" class="btn btn-success">View</a>
-                                                <button class="btn btn-warning">Update</button>
+                                                <a href="/admin/user/update/${user.id}"
+                                                    class="btn btn-warning mx-2">Update</a>
                                                 <button class="btn btn-danger">Delete</button>
                                             </td>
                                         </tr>
