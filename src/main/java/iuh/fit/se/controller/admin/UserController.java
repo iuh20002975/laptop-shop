@@ -10,6 +10,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,6 +20,7 @@ import iuh.fit.se.domain.User;
 import iuh.fit.se.repository.UserRepository;
 import iuh.fit.se.service.UploadService;
 import iuh.fit.se.service.UserService;
+import jakarta.validation.Valid;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -36,7 +39,8 @@ public class UserController {
 
     public UserController(
             UploadService uploadService,
-            UserService userService, PasswordEncoder passwordEncoder) {
+            UserService userService,
+            PasswordEncoder passwordEncoder) {
         this.userService = userService;
         this.uploadService = uploadService;
         this.passwordEncoder = passwordEncoder;
@@ -75,16 +79,28 @@ public class UserController {
 
     @PostMapping(value = "/admin/user/create")
     public String createUserPage(Model model,
-            @ModelAttribute("newUser") User hoidanit,
+            @ModelAttribute("newUser") @Valid User hoidanit,
+            BindingResult newUserBindingResult,
             @RequestParam("hoidanitFile") MultipartFile file) {
 
+        List<FieldError> errors = newUserBindingResult.getFieldErrors();
+        for (FieldError error : errors) {
+            System.out.println(">>>>" + error.getField() + " - " + error.getDefaultMessage());
+        }
+
+        // validate
+        if (newUserBindingResult.hasErrors()) {
+            return "admin/user/create";
+        }
+
+        //
         String avatar = this.uploadService.handleSaveUploadFile(file, "avatar");
         String hashPassword = this.passwordEncoder.encode(hoidanit.getPassword());
 
-        hoidanit.setAvatar(avatar);// set nguoc lai gia tri cho avata
-        hoidanit.setPassword(hashPassword); // set nguoc lai gia tri cho password
+        hoidanit.setAvatar(avatar);
+        hoidanit.setPassword(hashPassword);
         hoidanit.setRole(this.userService.getRoleByName(hoidanit.getRole().getName()));
-
+        // save
         this.userService.handleSaveUser(hoidanit);
         return "redirect:/admin/user";
     }
