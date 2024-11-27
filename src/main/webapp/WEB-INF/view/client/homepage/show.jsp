@@ -6,13 +6,27 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Document</title>
-            <!-- Latest compiled and minified CSS -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Google Web Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+                rel="stylesheet">
 
-            <!-- Latest compiled JavaScript -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Icon Font Stylesheet -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <!-- Libraries Stylesheet -->
+            <link href="/client/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+            <link href="/client/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+            <!-- Customized Bootstrap Stylesheet -->
+            <link href="/client/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Template Stylesheet -->
+            <link href="/client/css/style.css" rel="stylesheet">
 
         </head>
 
@@ -132,12 +146,12 @@
                             <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
                                     <div class="carousel-item active rounded">
-                                        <img src="img/hero-img-1.png" class="img-fluid w-100 h-100 bg-secondary rounded"
-                                            alt="First slide">
+                                        <img src="/client/img/hero-img-1.png"
+                                            class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
                                         <a href="#" class="btn px-4 py-2 text-white rounded">Fruites</a>
                                     </div>
                                     <div class="carousel-item rounded">
-                                        <img src="img/hero-img-2.jpg" class="img-fluid w-100 h-100 rounded"
+                                        <img src="/client/img/hero-img-2.jpg" class="img-fluid w-100 h-100 rounded"
                                             alt="Second slide">
                                         <a href="#" class="btn px-4 py-2 text-white rounded">Vesitables</a>
                                     </div>
@@ -265,7 +279,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-5.jpg"
+                                                        <img src="/client/img/fruite-item-5.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -288,7 +302,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-5.jpg"
+                                                        <img src="/client/img/fruite-item-5.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -311,7 +325,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-2.jpg"
+                                                        <img src="/client/img/fruite-item-2.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -334,7 +348,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-4.jpg"
+                                                        <img src="/client/img/fruite-item-4.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -357,7 +371,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-3.jpg"
+                                                        <img src="/client/img/fruite-item-3.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -380,7 +394,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-1.jpg"
+                                                        <img src="/client/img/fruite-item-1.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -403,7 +417,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-2.jpg"
+                                                        <img src="/client/img/fruite-item-2.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -426,7 +440,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-5.jpg"
+                                                        <img src="/client/img/fruite-item-5.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -457,7 +471,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-5.jpg"
+                                                        <img src="/client/img/fruite-item-5.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -480,7 +494,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-2.jpg"
+                                                        <img src="/client/img/fruite-item-2.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -511,7 +525,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-1.jpg"
+                                                        <img src="/client/img/fruite-item-1.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -534,7 +548,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-6.jpg"
+                                                        <img src="/client/img/fruite-item-6.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -565,7 +579,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-5.jpg"
+                                                        <img src="/client/img/fruite-item-5.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -588,7 +602,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-4.jpg"
+                                                        <img src="/client/img/fruite-item-4.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -619,7 +633,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-3.jpg"
+                                                        <img src="/client/img/fruite-item-3.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -642,7 +656,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-2.jpg"
+                                                        <img src="/client/img/fruite-item-2.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -665,7 +679,7 @@
                                             <div class="col-md-6 col-lg-4 col-xl-3">
                                                 <div class="rounded position-relative fruite-item">
                                                     <div class="fruite-img">
-                                                        <img src="img/fruite-item-1.jpg"
+                                                        <img src="/client/img/fruite-item-1.jpg"
                                                             class="img-fluid w-100 rounded-top" alt="">
                                                     </div>
                                                     <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
@@ -703,7 +717,7 @@
                         <div class="col-md-6 col-lg-4">
                             <a href="#">
                                 <div class="service-item bg-secondary rounded border border-secondary">
-                                    <img src="img/featur-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                                    <img src="/client/img/featur-1.jpg" class="img-fluid rounded-top w-100" alt="">
                                     <div class="px-4 rounded-bottom">
                                         <div class="service-content bg-primary text-center p-4 rounded">
                                             <h5 class="text-white">Fresh Apples</h5>
@@ -716,7 +730,7 @@
                         <div class="col-md-6 col-lg-4">
                             <a href="#">
                                 <div class="service-item bg-dark rounded border border-dark">
-                                    <img src="img/featur-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                                    <img src="/client/img/featur-2.jpg" class="img-fluid rounded-top w-100" alt="">
                                     <div class="px-4 rounded-bottom">
                                         <div class="service-content bg-light text-center p-4 rounded">
                                             <h5 class="text-primary">Tasty Fruits</h5>
@@ -729,7 +743,7 @@
                         <div class="col-md-6 col-lg-4">
                             <a href="#">
                                 <div class="service-item bg-primary rounded border border-primary">
-                                    <img src="img/featur-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                                    <img src="/client/img/featur-3.jpg" class="img-fluid rounded-top w-100" alt="">
                                     <div class="px-4 rounded-bottom">
                                         <div class="service-content bg-secondary text-center p-4 rounded">
                                             <h5 class="text-white">Exotic Vegitable</h5>
@@ -752,7 +766,7 @@
                     <div class="owl-carousel vegetable-carousel justify-content-center">
                         <div class="border border-primary rounded position-relative vesitable-item">
                             <div class="vesitable-img">
-                                <img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="/client/img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
                                 style="top: 10px; right: 10px;">Vegetable</div>
@@ -769,7 +783,7 @@
                         </div>
                         <div class="border border-primary rounded position-relative vesitable-item">
                             <div class="vesitable-img">
-                                <img src="img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="/client/img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
                                 style="top: 10px; right: 10px;">Vegetable</div>
@@ -786,7 +800,8 @@
                         </div>
                         <div class="border border-primary rounded position-relative vesitable-item">
                             <div class="vesitable-img">
-                                <img src="img/vegetable-item-3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                                <img src="/client/img/vegetable-item-3.png" class="img-fluid w-100 rounded-top bg-light"
+                                    alt="">
                             </div>
                             <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
                                 style="top: 10px; right: 10px;">Vegetable</div>
@@ -803,7 +818,7 @@
                         </div>
                         <div class="border border-primary rounded position-relative vesitable-item">
                             <div class="vesitable-img">
-                                <img src="img/vegetable-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="/client/img/vegetable-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
                                 style="top: 10px; right: 10px;">Vegetable</div>
@@ -820,7 +835,7 @@
                         </div>
                         <div class="border border-primary rounded position-relative vesitable-item">
                             <div class="vesitable-img">
-                                <img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="/client/img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
                                 style="top: 10px; right: 10px;">Vegetable</div>
@@ -837,7 +852,7 @@
                         </div>
                         <div class="border border-primary rounded position-relative vesitable-item">
                             <div class="vesitable-img">
-                                <img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="/client/img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
                                 style="top: 10px; right: 10px;">Vegetable</div>
@@ -854,7 +869,7 @@
                         </div>
                         <div class="border border-primary rounded position-relative vesitable-item">
                             <div class="vesitable-img">
-                                <img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="/client/img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
                                 style="top: 10px; right: 10px;">Vegetable</div>
@@ -871,7 +886,7 @@
                         </div>
                         <div class="border border-primary rounded position-relative vesitable-item">
                             <div class="vesitable-img">
-                                <img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                <img src="/client/img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
                             </div>
                             <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
                                 style="top: 10px; right: 10px;">Vegetable</div>
@@ -908,7 +923,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative">
-                                <img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
+                                <img src="/client/img/baner-1.png" class="img-fluid w-100 rounded" alt="">
                                 <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute"
                                     style="width: 140px; height: 140px; top: 0; left: 0;">
                                     <h1 style="font-size: 100px;">1</h1>
@@ -938,7 +953,8 @@
                             <div class="p-4 rounded bg-light">
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                        <img src="img/best-product-1.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                        <img src="/client/img/best-product-1.jpg" class="img-fluid rounded-circle w-100"
+                                            alt="">
                                     </div>
                                     <div class="col-6">
                                         <a href="#" class="h5">Organic Tomato</a>
@@ -961,7 +977,8 @@
                             <div class="p-4 rounded bg-light">
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                        <img src="img/best-product-2.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                        <img src="/client/img/best-product-2.jpg" class="img-fluid rounded-circle w-100"
+                                            alt="">
                                     </div>
                                     <div class="col-6">
                                         <a href="#" class="h5">Organic Tomato</a>
@@ -984,7 +1001,8 @@
                             <div class="p-4 rounded bg-light">
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                        <img src="img/best-product-3.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                        <img src="/client/img/best-product-3.jpg" class="img-fluid rounded-circle w-100"
+                                            alt="">
                                     </div>
                                     <div class="col-6">
                                         <a href="#" class="h5">Organic Tomato</a>
@@ -1007,7 +1025,8 @@
                             <div class="p-4 rounded bg-light">
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                        <img src="img/best-product-4.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                        <img src="/client/img/best-product-4.jpg" class="img-fluid rounded-circle w-100"
+                                            alt="">
                                     </div>
                                     <div class="col-6">
                                         <a href="#" class="h5">Organic Tomato</a>
@@ -1030,7 +1049,8 @@
                             <div class="p-4 rounded bg-light">
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                        <img src="img/best-product-5.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                        <img src="/client/img/best-product-5.jpg" class="img-fluid rounded-circle w-100"
+                                            alt="">
                                     </div>
                                     <div class="col-6">
                                         <a href="#" class="h5">Organic Tomato</a>
@@ -1053,7 +1073,8 @@
                             <div class="p-4 rounded bg-light">
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                        <img src="img/best-product-6.jpg" class="img-fluid rounded-circle w-100" alt="">
+                                        <img src="/client/img/best-product-6.jpg" class="img-fluid rounded-circle w-100"
+                                            alt="">
                                     </div>
                                     <div class="col-6">
                                         <a href="#" class="h5">Organic Tomato</a>
@@ -1074,7 +1095,7 @@
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-3">
                             <div class="text-center">
-                                <img src="img/fruite-item-1.jpg" class="img-fluid rounded" alt="">
+                                <img src="/client/img/fruite-item-1.jpg" class="img-fluid rounded" alt="">
                                 <div class="py-4">
                                     <a href="#" class="h5">Organic Tomato</a>
                                     <div class="d-flex my-3 justify-content-center">
@@ -1092,7 +1113,7 @@
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-3">
                             <div class="text-center">
-                                <img src="img/fruite-item-2.jpg" class="img-fluid rounded" alt="">
+                                <img src="/client/img/fruite-item-2.jpg" class="img-fluid rounded" alt="">
                                 <div class="py-4">
                                     <a href="#" class="h5">Organic Tomato</a>
                                     <div class="d-flex my-3 justify-content-center">
@@ -1110,7 +1131,7 @@
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-3">
                             <div class="text-center">
-                                <img src="img/fruite-item-3.jpg" class="img-fluid rounded" alt="">
+                                <img src="/client/img/fruite-item-3.jpg" class="img-fluid rounded" alt="">
                                 <div class="py-4">
                                     <a href="#" class="h5">Organic Tomato</a>
                                     <div class="d-flex my-3 justify-content-center">
@@ -1128,7 +1149,7 @@
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-3">
                             <div class="text-center">
-                                <img src="img/fruite-item-4.jpg" class="img-fluid rounded" alt="">
+                                <img src="/client/img/fruite-item-4.jpg" class="img-fluid rounded" alt="">
                                 <div class="py-2">
                                     <a href="#" class="h5">Organic Tomato</a>
                                     <div class="d-flex my-3 justify-content-center">
@@ -1209,7 +1230,7 @@
                                 </div>
                                 <div class="d-flex align-items-center flex-nowrap">
                                     <div class="bg-secondary rounded">
-                                        <img src="img/testimonial-1.jpg" class="img-fluid rounded"
+                                        <img src="/client/img/testimonial-1.jpg" class="img-fluid rounded"
                                             style="width: 100px; height: 100px;" alt="">
                                     </div>
                                     <div class="ms-4 d-block">
@@ -1237,7 +1258,7 @@
                                 </div>
                                 <div class="d-flex align-items-center flex-nowrap">
                                     <div class="bg-secondary rounded">
-                                        <img src="img/testimonial-1.jpg" class="img-fluid rounded"
+                                        <img src="/client/img/testimonial-1.jpg" class="img-fluid rounded"
                                             style="width: 100px; height: 100px;" alt="">
                                     </div>
                                     <div class="ms-4 d-block">
@@ -1265,7 +1286,7 @@
                                 </div>
                                 <div class="d-flex align-items-center flex-nowrap">
                                     <div class="bg-secondary rounded">
-                                        <img src="img/testimonial-1.jpg" class="img-fluid rounded"
+                                        <img src="/client/img/testimonial-1.jpg" class="img-fluid rounded"
                                             style="width: 100px; height: 100px;" alt="">
                                     </div>
                                     <div class="ms-4 d-block">
@@ -1361,7 +1382,7 @@
                                 <p>Email: Example@gmail.com</p>
                                 <p>Phone: +0123 4567 8910</p>
                                 <p>Payment Accepted</p>
-                                <img src="img/payment.png" class="img-fluid" alt="">
+                                <img src="/client/img/payment.png" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
@@ -1399,10 +1420,10 @@
             <!-- JavaScript Libraries -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="lib/easing/easing.min.js"></script>
-            <script src="lib/waypoints/waypoints.min.js"></script>
-            <script src="lib/lightbox/js/lightbox.min.js"></script>
-            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="/client/lib/easing/easing.min.js"></script>
+            <script src="/client/lib/waypoints/waypoints.min.js"></script>
+            <script src="/client/lib/lightbox/js/lightbox.min.js"></script>
+            <script src="/client/lib/owlcarousel/owl.carousel.min.js"></script>
 
             <!-- Template Javascript -->
             <script src="/client/js/main.js"></script>
