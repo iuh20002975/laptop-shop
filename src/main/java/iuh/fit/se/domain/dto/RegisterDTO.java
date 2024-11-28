@@ -1,5 +1,8 @@
 package iuh.fit.se.domain.dto;
 
+import iuh.fit.se.service.validator.RegisterChecked;
+
+@RegisterChecked
 public class RegisterDTO {
     private String firstName;
     private String lastName;
