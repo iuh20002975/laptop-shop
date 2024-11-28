@@ -6,22 +6,19 @@ import org.springframework.stereotype.Service;
 
 import iuh.fit.se.domain.Role;
 import iuh.fit.se.domain.User;
+import iuh.fit.se.domain.dto.RegisterDTO;
 import iuh.fit.se.repository.RoleRepository;
 import iuh.fit.se.repository.UserRepository;
 
 @Service
 public class UserService {
-
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
 
-    public UserService(UserRepository userRepository, RoleRepository roleRepository) {
+    public UserService(UserRepository userRepository,
+            RoleRepository roleRepository) {
         this.userRepository = userRepository;
         this.roleRepository = roleRepository;
-    }
-
-    public String handleHello() {
-        return "hello from service";
     }
 
     public List<User> getAllUsers() {
@@ -29,13 +26,13 @@ public class UserService {
     }
 
     public List<User> getAllUsersByEmail(String email) {
-        return this.userRepository.findByEmail(email);
+        return this.userRepository.findOneByEmail(email);
     }
 
     public User handleSaveUser(User user) {
-        User long1 = this.userRepository.save(user);
-        System.out.println(long1);
-        return long1;
+        User eric = this.userRepository.save(user);
+        System.out.println(eric);
+        return eric;
     }
 
     public User getUserById(long id) {
@@ -50,4 +47,11 @@ public class UserService {
         return this.roleRepository.findByName(name);
     }
 
+    public User registerDTOtoUser(RegisterDTO registerDTO) {
+        User user = new User();
+        user.setFullName(registerDTO.getFirstName() + " " + registerDTO.getLastName());
+        user.setEmail(registerDTO.getEmail());
+        user.setPassword(registerDTO.getPassword());
+        return user;
+    }
 }
