@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import iuh.fit.se.domain.Order;
 import iuh.fit.se.domain.OrderDetail;
+import iuh.fit.se.domain.User;
 import iuh.fit.se.repository.OrderDetailRepository;
 import iuh.fit.se.repository.OrderRepository;
 
@@ -52,4 +53,9 @@ public class OrderService {
             this.orderRepository.save(currentOrder);
         }
     }
+
+    public List<Order> fetchOrderByUser(User user) {
+        return this.orderRepository.findByUser(user);
+    }
+
 }
