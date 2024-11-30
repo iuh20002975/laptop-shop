@@ -1,6 +1,7 @@
 package iuh.fit.se.service.specification;
 
 import java.util.List;
+
 import org.springframework.data.jpa.domain.Specification;
 
 import iuh.fit.se.domain.Product;
@@ -29,6 +30,11 @@ public class ProductSpecs {
     // case4
     public static Specification<Product> matchListFactory(List<String> factory) {
         return (root, query, criteriaBuilder) -> criteriaBuilder.in(root.get(Product_.FACTORY)).value(factory);
+    }
+
+    // case4
+    public static Specification<Product> matchListTarget(List<String> target) {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.in(root.get(Product_.TARGET)).value(target);
     }
 
     // case5
