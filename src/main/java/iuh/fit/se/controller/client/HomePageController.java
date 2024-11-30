@@ -2,6 +2,9 @@ package iuh.fit.se.controller.client;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,7 +23,6 @@ import iuh.fit.se.domain.dto.RegisterDTO;
 import iuh.fit.se.service.OrderService;
 import iuh.fit.se.service.ProductService;
 import iuh.fit.se.service.UserService;
-import jakarta.validation.Valid;
 
 @Controller
 public class HomePageController {
@@ -43,7 +45,11 @@ public class HomePageController {
 
     @GetMapping("/")
     public String getHomePage(Model model) {
-        List<Product> products = this.productService.fetchProducts();
+        // List<Product> products = this.productService.fetchProducts();
+        Pageable pageable = PageRequest.of(0, 10);
+        Page<Product> prs = this.productService.fetchProducts(pageable);
+        List<Product> products = prs.getContent();
+
         model.addAttribute("products", products);
         return "client/homepage/show";
     }

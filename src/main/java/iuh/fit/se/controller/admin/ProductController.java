@@ -3,6 +3,9 @@ package iuh.fit.se.controller.admin;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,10 +16,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import jakarta.validation.Valid;
+
 import iuh.fit.se.domain.Product;
 import iuh.fit.se.service.ProductService;
 import iuh.fit.se.service.UploadService;
-import jakarta.validation.Valid;
 
 @Controller
 public class ProductController {
@@ -32,9 +36,30 @@ public class ProductController {
     }
 
     @GetMapping("/admin/product")
-    public String getProduct(Model model) {
-        List<Product> prs = this.productService.fetchProducts();
-        model.addAttribute("products", prs);
+    public String getProduct(
+            Model model,
+            @RequestParam("page") Optional<String> pageOptional) {
+        int page = 1;
+        try {
+            if (pageOptional.isPresent()) {
+                // convert from String to int
+                page = Integer.parseInt(pageOptional.get());
+            } else {
+                // page = 1
+            }
+        } catch (Exception e) {
+            // page = 1
+            // TODO: handle exception
+        }
+
+        Pageable pageable = PageRequest.of(page - 1, 5);
+        Page<Product> prs = this.productService.fetchProducts(pageable);
+        List<Product> listProducts = prs.getContent();
+        model.addAttribute("products", listProducts);
+
+        model.addAttribute("currentPage", page);
+        model.addAttribute("totalPages", prs.getTotalPages());
+
         return "admin/product/show";
     }
 
